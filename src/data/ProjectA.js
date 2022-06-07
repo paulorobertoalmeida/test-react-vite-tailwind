@@ -4,7 +4,7 @@ import { EmissionInfo, LocationInfo, CompanyInfo, ProfessionalInfo, ProjectInfo 
 
 let originalEmissionsMock = new EmissionInfo(66, 7, 0, 0)
 let finalEmissionsMock = new EmissionInfo(10, 4, 5, 1)
-let locationMock = new LocationInfo(10, 20, "123456789")
+export let locationMock = new LocationInfo(10, 20, "123456789")
 export let companyMock = new CompanyInfo("Compañia One", "123456789")
 export let professionalMock = new ProfessionalInfo("Maria", "Garcia", "123456789")
 export let buildingAreaMock = 1380
