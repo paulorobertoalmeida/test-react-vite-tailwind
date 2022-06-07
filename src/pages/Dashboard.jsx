@@ -1,14 +1,14 @@
 import React from 'react'
-import { calculateCredit, myRating, getCredits } from '../data/ProjectA'
+import { calculateCredit, myRating, getCredits, buildingAreaMock, professionalMock, companyMock } from '../data/ProjectA'
 
 export default function Dashboard() {
 
   return (
 
-    <div class="flex bg-gray-100 rounded-xl m-3 shadow-xl">
+    <div class="flex bg-gray-100 rounded-xl m-3 shadow-xl mb-20">
       <div class="flex px-16 space-y-16 overflow-hidden m-3 pb-4 flex-col items-center justify-center rounded-tl-xl rounded-bl-xl bg-blue-800 shadow-lg">
         <div class="flex items-center justify-center p-4 shadow-lg">
-          <h1 class="text-white font-bold mr-2 cursor-pointer">Dashboard</h1>
+          <h1 class="text-white font-bold mr-2 cursor-pointer">My Projects</h1>
         </div>
         <ul>
           <li class="flex space-x-2 mt-4 px-6 py-4 text-white hover:bg-white hover:text-blue-800 font-bold hover:rounded-br-3xl transition duration-100 cursor-pointer">
@@ -47,8 +47,8 @@ export default function Dashboard() {
       </div>
       <div class="flex-col bg-indigo-50 w-full ml-4 pr-6">
         <div class="flex justify-between p-4 bg-white mt-3 rounded-xl shadow-lg">
-          <h1 class="text-xl font-bold text-gray-700">Welcome to Stunning Green</h1>
-          <p class="text-md font-italic text-gray-500">This project is ....</p>
+          <h1 class="text-xl font-bold text-gray-700">Welcome {companyMock.name}</h1>
+          <p class="text-md font-italic text-gray-500">Hi {professionalMock.firstName + ' ' + professionalMock.lastName} </p>
           <div class="flex justify-between w-2/5">
             <div class="flex items-center border-2 p-2 rounded-xl">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -92,16 +92,16 @@ export default function Dashboard() {
             <h1 class="text-xl font-bold text-gray-800 mt-4">Today’s Status</h1>
             <div class="flex justify-between space-x-4 text-center mt-6">
               <div class="bg-indigo-50 rounded-xl p-10">
-                <h3>8.7K</h3>
-                <spnan>Total Present</spnan>
+                <h3>{buildingAreaMock}</h3>
+                <span>Total Building Area</span>
               </div>
               <div class="bg-indigo-50 rounded-xl p-10">
                 <h3>99</h3>
-                <spnan>Registrations</spnan>
+                <span>Registrations</span>
               </div>
               <div class="bg-indigo-50 rounded-xl p-10">
                 <h3>30</h3>
-                <spnan>Totals Session</spnan>
+                <span>Totals Session</span>
               </div>
             </div>
           </div>
@@ -110,15 +110,15 @@ export default function Dashboard() {
             <div class="flex justify-between space-x-4 text-center mt-6">
               <div class="bg-indigo-50 rounded-xl p-10">
                 <h3>8.7K</h3>
-                <spnan>Total Present</spnan>
+                <span>Total Present</span>
               </div>
               <div class="bg-indigo-50 rounded-xl p-10">
                 <h3>99</h3>
-                <spnan>Registrations</spnan>
+                <span>Registrations</span>
               </div>
               <div class="bg-indigo-50 rounded-xl p-10">
                 <h3>30</h3>
-                <spnan>Totals Session</spnan>
+                <span>Totals Session</span>
               </div>
             </div>
           </div>
